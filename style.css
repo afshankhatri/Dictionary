@@ -1,0 +1,114 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: aqua;
+    margin-bottom: 20px;
+}
+h1{
+    position: absolute;
+    top: 25px;
+    left: 10px;
+}
+footer{
+    position: absolute;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: aqua;
+}
+form{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+.inpWord{
+    height: 35px;
+    width: 400px;
+    max-width: 400px; /* Ensure a max width */
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px gray
+}
+#srchbtn{
+    width: 60px;
+    height: 47px;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 18px;
+    margin-left: 5px;
+    box-shadow: 2px 2px 5px gray;
+    cursor: pointer;
+    background-color: azure;
+}
+#srchbtn:hover,.viewmore:hover{
+    transform: scale(1.02); /*scale:1.02;*/
+}
+.mainBod{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wordInfo{
+    width: 500px;
+    max-width: 500px;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgb(0, 255, 255) ;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.viewmore { 
+    /* display: none; */ /*display flex will be done by js */
+    width: 90px;
+    height: 40px;
+    border-radius: 18px;
+    box-shadow: 2px 2px 5px gray;
+    cursor: pointer;
+    background-color: rgb(253, 190, 190);
+    margin: 10px;
+}a{
+    text-decoration: none;
+    color: black;
+}
+#info i{
+    font-size: 18px;
+}
+#info h2{
+    padding: 7px;
+}
+@media (max-width: 600px) {
+    .inpWord {
+        margin-bottom: 10px;
+        margin: 10px;
+        width: 100%;
+        max-width: 100%; /* Full width on small screens */
+    }
+    
+    #srchbtn {
+        width: 100%;
+        margin: 10px;
+        margin-top: 10px; /* Add margin top for spacing */
+    }
+
+    .wordInfo {
+        width: 100%;
+        padding: 10px; /* Adjust padding */
+    }
+}
